@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logo from "@/components/Notelogo.png";
+import { Link } from "react-router";
 
 function Navbar() {
   return (
@@ -19,10 +20,10 @@ function Navbar() {
 
         <div className="flex items-center gap-2">
           <Button asChild variant="ghost" size="sm" className="text-sm">
-            <a href="/login">Sign In</a>
+            <Link to={"/login"}>Sign In</Link>
           </Button>
           <Button asChild size="sm" className="text-sm">
-            <a href="/signup">Get Started</a>
+            <Link to={"/signup"}>Get Started</Link>
           </Button>
         </div>
       </div>
