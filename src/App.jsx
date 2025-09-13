@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Notes from "./pages/Notes";
+import Hero from "./pages/Hero";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/notes" element={<Notes />} />
+          <Route path="/" element={<Hero />} />
         </Routes>
       </div>
     </BrowserRouter>
