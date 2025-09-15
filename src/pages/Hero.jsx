@@ -2,6 +2,7 @@ import React from "react";
 import heroimg from "../assets/Heroimg.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router";
+import Features from "./Features";
 
 const Hero = () => {
   return (
@@ -41,7 +42,7 @@ const Hero = () => {
             </div>
             <div>
               <img
-                className="aspect-[16/9] rounded-2xl object-cover object-center shadow-xs lg:aspect-[5/4]"
+                className="aspect-[16/9] rounded-2xl object-cover object-center shadow-xs lg:aspect-[5/4] border border-black"
                 src={heroimg}
                 alt="#"
               />
@@ -49,6 +50,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Features />
     </div>
   );
 };
